@@ -1,0 +1,12 @@
+int size = 7;
+for (int x = 1; x <= size; x++) {
+  int ynt = size - 2 * Math.abs(x-(size+1)/2);
+  int znt = size - ynt;
+  for (int z = 1; z <= znt; z++) {
+    System.out.print(" ");
+  }
+  for (int y = 1; y <= ynt; y++) {
+    System.out.print("##");
+  }
+  System.out.println();
+}
